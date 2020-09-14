@@ -1,76 +1,8 @@
 body {
     color: #232323;
     font-family: Varela, Arial;
-    background-color: #FFFFFF;
-}
-h1, h2{
-    padding: 20px;
-    
-}
-h1 {
-    
-    text-align: center;
-    font-size: 70px;
-    
-}
-h2  {
-    
-    font-size: 50px;
-    border: 1px double #E5E5E5;
-}
-p {
-    
-}
-
-#nav-container {
-    background-color: #CED5DE;
-    font-weight: bold;
-    font-size: 25px;
-    height: 35px;
-
-}
-#nav-container ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-align: center;
-}
-#nav-container li {
-    display: inline;
-    padding: 15px;
-    
-}
-#nav-container a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 8px 8px 8px;
-    
-}
-#theForm {
-    color:white;
-    display: table;
-    padding: 15px;
-    background-color: grey;
-    border:solid 2px black;
-}
-.row {
-    display: table-row;
-}
-.row label {
-    text-align: right;
-    display: table-cell;
-    padding: 2px;
-}
-.row input {
-    display: table-cell;
-    padding: 2px;
-
-}
-#divProj {
-
-}
-#divHobbies {
-
+    background-color: #fdfdff;
+    margin: 0px;
 }
 .imageN {
     display: block;
@@ -79,10 +11,17 @@ p {
     margin-bottom: 200px;
 }
 
+h1, h2 {
+    padding: 20px;
+}
 
-#nav-container a:hover {
-    color: #CED5DE;
-    background: white;
-    
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+    border: 1px double #E5E5E5;
 }
 
