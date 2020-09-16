@@ -1,0 +1,38 @@
+body {
+    color: #232323;
+    font-family: Varela, Arial;
+    background-color: #fdfdff;
+    margin: 0px;
+}
+
+.section-container {
+    max-width: 80%;
+    background-color: #f4f1de;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+}
+
+#footer {
+  background-color: #393d3f;
+  width: 100%;
+  text-align: center;
+  color: white;
+  /* bottom: 0%;
+  position: fixed; */
+}
+
+h1, .page-header {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.page-header {
+    font-size: 50px;
+    border: 1px double #E5E5E5;
+}
