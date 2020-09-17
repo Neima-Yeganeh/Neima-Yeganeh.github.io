@@ -14,15 +14,6 @@ body {
     display: flex;
 }
 
-#footer {
-  background-color: #393d3f;
-  width: 100%;
-  text-align: center;
-  color: white;
-  /* bottom: 0%;
-  position: fixed; */
-}
-
 h1 {
     text-align: center;
     font-size: 70px;

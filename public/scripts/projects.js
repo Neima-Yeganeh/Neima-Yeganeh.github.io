@@ -1,6 +1,7 @@
 $(document).ready(() => {
   $('#nav-container').load('nav.html', customizeNavbar);
   addProjects();
+  $('#footer-container').load('footer.html');
 });
 
 function customizeNavbar() {
@@ -31,7 +32,6 @@ let projects = [
     links: [['My website  code on GitHub', 'https://github.com/Neima-Yeganeh/Neima-Yeganeh.github.io']],
     description: `I decided to make my own website (this website) to showcase projects I have been
       working on as well as to explain things I'm interested in.`,
-    // photos: ['./resources/website.png']
   },
   {
     title: 'Push Bot (Robot)',
@@ -65,7 +65,6 @@ let projects = [
     tools: 'Soddering Iron, EAGLE (CAD)',
     dates: 'April 2020 - June 2020',
     class: 'Basic Electronics Manufacturing class (IME156)',
-    //links: [], // link to video
     video: './resources/ledPrism.MOV',
     description: `Manufactured an LED Prism that interacts with music to perform a light show. It detects the notes from
       any song and outputs a different color of light depending on the frequency of the note. I designed a PCB using EAGLE,
@@ -104,7 +103,6 @@ let projects = [
     description: `In a group of four, we designed a relational database that would accomodate an online soccer shop.
       We created command-line scripts for the user to interact with the database, since this was a databases class
       not a web development class.`,
-    photos: [], //
   },
   {
     title: 'WeEat',
