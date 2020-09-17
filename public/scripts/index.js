@@ -6,5 +6,4 @@ $(document).ready(() => {
 function customizeNavbar() {
   //$('#nav-title').text('Contact');
   $('#index-btn').css("text-decoration","underline");
-  //$('#contact-btn-li').css("background-color","blue;");
 }

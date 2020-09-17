@@ -1,3 +1,6 @@
 .section-container {
   display: block;
 }
+#project-title-container:hover {
+  opacity: 0.7;
+}
