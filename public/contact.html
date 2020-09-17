@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <!-- style sheets -->
         <link rel="stylesheet" type="text/css" href="styles/common.css">
+        <link rel="stylesheet" type="text/css" href="styles/contact.css">
         <link rel="stylesheet" type="text/css" href="styles/nav.css">
 
         <!-- scripts  -->
@@ -11,8 +12,35 @@
     </head>
     <body>
         <div id="nav-container"></div>
-        <!--project section-->
-        
-        
+        <div id="page-container">
+            <div class="section-container">
+                <h3>Fill out this form to send me an email</h3>
+                <form id="theform">
+                <!-- <form id="theform" action="" method=""> -->
+                    <div class="form-row">
+                        <label class="form-label" for="name">Name</label>
+                        <input id="name" class="form-input" type="text" required/>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="email">Email</label>
+                        <input id="email" class="form-input" type="email" required/>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input id="subject" class="form-input" type="text" required/>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="content">Content</label>
+                        <textarea id="content" class="form-input" type="text" required></textarea>
+                    </div>
+                    <!-- <div class="form-row">
+                        <input class="form-input" id="submit-btn" type="submit" value="Send"></input>
+                    </div> -->
+                    <div class="form-row">
+                        <button class="form-input" id="submit-btn" onclick="sendEmail(event)">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html> 

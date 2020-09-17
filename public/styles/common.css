@@ -23,16 +23,14 @@ body {
   position: fixed; */
 }
 
-h1, .page-header {
-    padding: 20px;
-}
-
 h1 {
     text-align: center;
     font-size: 70px;
+    padding: 20px;
 }
 
 .page-header {
     font-size: 50px;
     border: 1px double #E5E5E5;
+    padding: 20px;
 }

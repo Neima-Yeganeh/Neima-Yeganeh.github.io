@@ -28,6 +28,7 @@ let projects = [
     languages: 'Javascript/jQuery, HTML, CSS',
     tools: 'Git/GitHub, VSCode, Sourcetree',
     dates: 'August 2020 - Present',
+    links: [['My website  code on GitHub', 'https://github.com/Neima-Yeganeh/Neima-Yeganeh.github.io']],
     description: `I decided to make my own website (this website) to showcase projects I have been
       working on as well as to explain things I'm interested in.`,
     // photos: ['./resources/website.png']
@@ -46,7 +47,7 @@ let projects = [
       stacking competition. Due to the pandemic, the competition unfortunately got cancelled, but I still had a good
       time building my bot. I've linked my complete write-up detailing the process and design of the bot.`,
     video: './resources/robotVid.MOV',
-    // photos: ['./resources/robotReal.png', './resources/robotCad.png'],
+    photos: ['./resources/robotReal.png', './resources/robotCad.png'],
   },
   {
     title: 'Image Feature Detection and Matching',
@@ -140,28 +141,21 @@ function addProject(project, projectsContainer) {
   let projectContainer = document.createElement('div');
   projectContainer.classList = 'section-container';
 
-  // project container contains title/arrow container
   let titleContainer = document.createElement('div');
   titleContainer.classList = 'project-title-container';
   projectContainer.append(titleContainer);
 
-  // // title container has title and dropdown arrow
-  // let titleElement = document.createElement('div');
-  // titleElement.innerText = project.title;
-  // titleContainer.append(titleElement);
-
-  // add dropdown arrow to title container
-
+  // title container contains title/arrow
   titleContainer.innerHTML = `
     <h2 class="project-title" style="display:inline;">
       ${project.title}
     </h2>
-    <div onclick="toggleProjectInfo(event)" class="dropdown-icon-container" style="display:inline; float:right;">
+    <div class="dropdown-icon-container" style="display:inline; float:right;">
       <i class="fas ${caretLeft}"></i>
     </div>
   `;
 
-  // project container contains info container
+  // info container contains all other project info (sans title)
   let infoContainer = document.createElement('div');
   infoContainer.classList = 'project-info-container';
   infoContainer.style.display = 'none';
@@ -219,7 +213,6 @@ function addProject(project, projectsContainer) {
 
   let photosElement = document.createElement('div');
   if (project.photos) {
-    console.log(project, project.photos)
     let str = '';
     for (let i=0; i<project.photos.length; i++) {
       str += ` <img src="${project.photos[i]}" style="max-width:100%;"/>`
@@ -227,12 +220,17 @@ function addProject(project, projectsContainer) {
     photosElement.innerHTML = str;
     infoContainer.append(photosElement);
   }
-
+  
+  titleContainer.addEventListener("click", toggleProjectInfo);
   projectsContainer.append(projectContainer);
 }
 
 function toggleProjectInfo(event) {
   let icon = event.target;
+  if (icon.nodeName != 'I') { // if the user clicked the div not the icon itself, get the icon itself
+    icon = icon.getElementsByTagName('i')[0];
+  }
+  // console.log(event, icon);
   let projectSectionContainer = icon.closest('.section-container');
   let projectInfoContainer = projectSectionContainer.getElementsByClassName('project-info-container')[0];
 
