@@ -19,8 +19,8 @@ function sendEmail(e) {
   let content = document.getElementById('content').value;
   console.log(name, email, subject, content);
 
-  let api_key = '10825c2f2a102886bb0bab9d3465d957-d5e69b0b-cb523db6';
-  let domain = 'sandbox87fead90dc584c8f888ad23294316b53.mailgun.org';
+  let api_key = '';
+  let domain = '';
   let mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
   
   // let data = {
