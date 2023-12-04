@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { Tabs, TabList, Tab } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
@@ -13,6 +12,7 @@ function Navbar({ activeTab }) {
 
     return (
       <Tabs
+        className="tabs"
         align="center"
         onChange={handleTabChange}
         index={data.findIndex((tab) => tab.url.toLowerCase() === selectedTab)}
@@ -33,7 +33,7 @@ function Navbar({ activeTab }) {
     {
       label: "About",
       url: "/",
-    },
+    } /* add each tab one by one here**
     {
       label: "Projects",
       url: "/projects/",
@@ -45,7 +45,7 @@ function Navbar({ activeTab }) {
     {
       label: "Contact Me",
       url: "/contactme/",
-    },
+    },*/,
   ];
 
   return (

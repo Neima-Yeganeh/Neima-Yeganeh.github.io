@@ -23,29 +23,30 @@ describe("Header", () => {
 
   it("renders the correct number of navigation items", () => {
     const navItems = getAllByRole("tab");
-    expect(navItems.length).toBe(4);
+    expect(navItems.length).toBe(1);
+    // change with each add
   });
 
   it("displays correct labels for navigation items", () => {
     expect(getByText("About")).toBeInTheDocument();
-    expect(getByText("Projects")).toBeInTheDocument();
+    /*expect(getByText("Projects")).toBeInTheDocument();
     expect(getByText("Shop")).toBeInTheDocument();
-    expect(getByText("Contact Me")).toBeInTheDocument();
+    expect(getByText("Contact Me")).toBeInTheDocument();*/
   });
 
   it("renders header with navbar component", () => {
     const header = container.querySelector(".header");
     const navbar = container.querySelector(".Navbar");
     const aboutTab = getByText("About");
-    const projectsTab = getByText("Projects");
+    /*const projectsTab = getByText("Projects");
     const shopTab = getByText("Shop");
-    const contactTab = getByText("Contact Me");
+    const contactTab = getByText("Contact Me");*/
 
     expect(header).toBeInTheDocument();
     expect(navbar).toBeInTheDocument();
     expect(aboutTab).toBeInTheDocument();
-    expect(projectsTab).toBeInTheDocument();
+    /*expect(projectsTab).toBeInTheDocument();
     expect(shopTab).toBeInTheDocument();
-    expect(contactTab).toBeInTheDocument();
+    expect(contactTab).toBeInTheDocument();*/
   });
 });

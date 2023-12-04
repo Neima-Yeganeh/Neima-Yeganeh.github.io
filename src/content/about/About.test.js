@@ -10,7 +10,7 @@ describe("About", () => {
   });
   it("contains the 'About Page' text", () => {
     const { container } = render(<About />);
-    expect(container.textContent).toContain("About Page");
+    expect(container.textContent).toContain("Thank you");
   });
   // Add more tests specific to the About component if needed
 });
