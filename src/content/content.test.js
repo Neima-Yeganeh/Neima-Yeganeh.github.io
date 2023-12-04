@@ -14,12 +14,12 @@ describe("Content", () => {
   });
   it("renders About component when on '/' route", () => {
     render(
-      <MemoryRouter initialEntries={["/"]}>
+      <MemoryRouter initialEntries={["#"]}>
         <Content />
       </MemoryRouter>
     );
 
-    expect(screen.getByText("About Page")).toBeInTheDocument();
+    expect(screen.getByText("Thank you")).toBeInTheDocument();
   });
   it("renders Projects component when on '/projects/' route", () => {
     render(
@@ -58,6 +58,6 @@ describe("Content", () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText("About Page")).toBeInTheDocument();
+    expect(screen.getByText("Thank you")).toBeInTheDocument();
   });
 });

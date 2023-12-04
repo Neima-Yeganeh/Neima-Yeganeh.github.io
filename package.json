@@ -65,7 +65,6 @@
     "jest": "^27.5.1"
   },
   "jest": {
-    "testEnvironment": "jsdom",
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest"
     },
